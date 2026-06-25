@@ -1,0 +1,51 @@
+[0.014s] Invoking command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100 -- -j8 -l8
+[0.074s] [ 25%] [32mBuilding CXX object CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_PX100.cpp.o[0m
+[1.317s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:[m[K In member function ‘[01m[Kvirtual void sas::RobotDriverPX100::[01;32m[Kset_target_joint_positions[m[K(const Eigen::VectorXd&)[m[K’:
+[1.317s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:139:44:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[KEigen::EigenBase<Eigen::Matrix<double, -1, 1> >::Index[m[K’ {aka ‘[01m[Klong int[m[K’} and ‘[01m[Kstd::vector<unsigned char>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.317s]   139 |     if ([01;35m[Kdesired_joint_positions_rad.size() != configuration_.ids.size()[m[K)
+[1.317s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.318s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:[m[K In member function ‘[01m[Kvirtual void sas::RobotDriverPX100::[01;32m[Kset_target_joint_velocities[m[K(const Eigen::VectorXd&)[m[K’:
+[1.318s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:196:44:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[KEigen::EigenBase<Eigen::Matrix<double, -1, 1> >::Index[m[K’ {aka ‘[01m[Klong int[m[K’} and ‘[01m[Kstd::vector<unsigned char>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.318s]   196 |     if ([01;35m[Kset_target_joint_velocities.size() != configuration_.ids.size()[m[K)
+[1.318s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.731s] [ 50%] [32m[1mLinking CXX shared library libsas_robot_driver_px100.so[0m
+[1.881s] [ 50%] Built target sas_robot_driver_px100
+[1.911s] [ 75%] [32mBuilding CXX object CMakeFiles/sas_robot_driver_PX100_node.dir/src/sas_robot_driver_PX100_node.cpp.o[0m
+[6.728s] [100%] [32m[1mLinking CXX executable sas_robot_driver_PX100_node[0m
+[6.897s] [100%] Built target sas_robot_driver_PX100_node
+[6.907s] Invoked command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100 -- -j8 -l8
+[6.916s] Invoking command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100
+[6.924s] -- Install configuration: ""
+[6.925s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/environment/library_path.sh
+[6.925s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/environment/library_path.dsv
+[6.925s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/include
+[6.925s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/include/sas_robot_driver_PX100
+[6.925s] -- Installing: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/include/sas_robot_driver_PX100/sas_robot_driver_PX100.hpp
+[6.925s] -- Installing: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/lib/libsas_robot_driver_px100.so
+[6.926s] -- Set non-toolchain portion of runtime path of "/home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/lib/libsas_robot_driver_px100.so" to ""
+[6.926s] -- Installing: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/lib/sas_robot_driver_px100/sas_robot_driver_PX100_node
+[6.927s] -- Set non-toolchain portion of runtime path of "/home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/lib/sas_robot_driver_px100/sas_robot_driver_PX100_node" to ""
+[6.927s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100//launch
+[6.927s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100//launch/real_robot_launch.py
+[6.927s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/lib/sas_robot_driver_px100
+[6.927s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/lib/sas_robot_driver_px100/joint_interface_example.py
+[6.927s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/ament_index/resource_index/package_run_dependencies/sas_robot_driver_px100
+[6.928s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/ament_index/resource_index/parent_prefix_path/sas_robot_driver_px100
+[6.928s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/environment/ament_prefix_path.sh
+[6.928s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/environment/ament_prefix_path.dsv
+[6.928s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/environment/path.sh
+[6.928s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/environment/path.dsv
+[6.928s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/local_setup.bash
+[6.928s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/local_setup.sh
+[6.928s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/local_setup.zsh
+[6.929s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/local_setup.dsv
+[6.929s] -- Installing: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/package.dsv
+[6.929s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/ament_index/resource_index/packages/sas_robot_driver_px100
+[6.929s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/cmake/export_sas_robot_driver_px100Export.cmake
+[6.929s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/cmake/export_sas_robot_driver_px100Export-noconfig.cmake
+[6.929s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/cmake/ament_cmake_export_targets-extras.cmake
+[6.930s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.930s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/cmake/sas_robot_driver_px100Config.cmake
+[6.930s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/cmake/sas_robot_driver_px100Config-version.cmake
+[6.931s] -- Up-to-date: /home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100/share/sas_robot_driver_px100/package.xml
+[6.931s] Invoked command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100

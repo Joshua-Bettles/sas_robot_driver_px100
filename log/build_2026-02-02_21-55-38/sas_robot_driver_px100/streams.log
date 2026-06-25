@@ -1,0 +1,136 @@
+[0.011s] Invoking command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100 -- -j8 -l8
+[0.059s] [ 25%] [32mBuilding CXX object CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_PX100.cpp.o[0m
+[1.248s] In file included from [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:1[m[K:
+[1.248s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/include/sas_robot_driver_PX100/sas_robot_driver_PX100.hpp:15:23:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (1, should be 2)
+[1.248s]    15 |     std::array<uint8_t[01;31m[K>[m[K ids;
+[1.248s]       |                       [01;31m[K^[m[K
+[1.248s] In file included from [01m[K/usr/include/c++/13/bits/unique_ptr.h:36[m[K,
+[1.249s]                  from [01m[K/usr/include/c++/13/memory:78[m[K,
+[1.249s]                  from [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/include/sas_robot_driver_PX100/sas_robot_driver_PX100.hpp:2[m[K:
+[1.249s] [01m[K/usr/include/c++/13/tuple:2019:45:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class _Tp, long unsigned int _Nm> struct std::array[m[K’
+[1.249s]  2019 |   template<typename _Tp, size_t _Nm> struct [01;36m[Karray[m[K;
+[1.249s]       |                                             [01;36m[K^~~~~[m[K
+[1.282s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:[m[K In constructor ‘[01m[Ksas::RobotDriverPX100::[01;32m[KRobotDriverPX100[m[K(const sas::RobotDriverPX100Configuration&, std::atomic_bool*)[m[K’:
+[1.282s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:46:81:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst char*[m[K’
+[1.283s]    46 | er_ = dynamixel::PortHandler::getPortHandler([01;31m[Kconfiguration_.usb[m[K); // your dxl port name
+[1.283s]       |                                              [01;31m[K~~~~~~~~~~~~~~~^~~[m[K
+[1.283s]       |                                                             [01;31m[K|[m[K
+[1.283s]       |                                                             [01;31m[Kstd::string {aka std::__cxx11::basic_string<char>}[m[K
+[1.283s] 
+[1.283s] In file included from [01m[K/usr/local/include/dynamixel_sdk/group_bulk_read.h:26[m[K,
+[1.284s]                  from [01m[K/usr/local/include/dynamixel_sdk/dynamixel_sdk.h:26[m[K,
+[1.284s]                  from [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:5[m[K:
+[1.284s] [01m[K/usr/local/include/dynamixel_sdk/port_handler.h:65:50:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kstatic dynamixel::PortHandler* dynamixel::PortHandler::[01;32m[KgetPortHandler[m[K(const char*)[m[K’
+[1.284s]    65 |   static PortHandler *getPortHandler([01;36m[Kconst char *port_name[m[K);
+[1.284s]       |                                      [01;36m[K~~~~~~~~~~~~^~~~~~~~~[m[K
+[1.284s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:47:95:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::shared_ptr<dynamixel::PacketHandler>[m[K’ and ‘[01m[Kdynamixel::PacketHandler*[m[K’)
+[1.284s]    47 | xel::PacketHandler::getPacketHandler(configuration_.protocol[01;31m[K)[m[K; //protocol version
+[1.284s]       |                                                             [01;31m[K^[m[K
+[1.285s] 
+[1.285s] In file included from [01m[K/usr/include/c++/13/memory:80[m[K:
+[1.285s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:418:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::[01;32m[Koperator=[m[K(const std::shared_ptr<_Yp>&) [35m[K[with _Tp = dynamixel::PacketHandler][m[K[m[K’
+[1.285s]   418 |         [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+[1.285s]       |         [01;36m[K^~~~~~~~[m[K
+[1.285s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:418:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.285s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:47:95:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’ and ‘[01m[Kdynamixel::PacketHandler*[m[K’
+[1.285s]    47 | xel::PacketHandler::getPacketHandler(configuration_.protocol[01;36m[K)[m[K; //protocol version
+[1.285s]       |                                                             [01;36m[K^[m[K
+[1.285s] 
+[1.286s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:429:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::[01;32m[Koperator=[m[K(std::auto_ptr<_Up>&&) [35m[K[with _Tp = dynamixel::PacketHandler][m[K[m[K’
+[1.286s]   429 |         [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+[1.286s]       |         [01;36m[K^~~~~~~~[m[K
+[1.286s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:429:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.286s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:47:95:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::auto_ptr<_Up>[m[K’ and ‘[01m[Kdynamixel::PacketHandler*[m[K’
+[1.286s]    47 | xel::PacketHandler::getPacketHandler(configuration_.protocol[01;36m[K)[m[K; //protocol version
+[1.286s]       |                                                             [01;36m[K^[m[K
+[1.286s] 
+[1.286s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:446:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::[01;32m[Koperator=[m[K(std::shared_ptr<_Yp>&&) [35m[K[with _Tp = dynamixel::PacketHandler][m[K[m[K’
+[1.286s]   446 |         [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+[1.286s]       |         [01;36m[K^~~~~~~~[m[K
+[1.287s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:446:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.287s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:47:95:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::shared_ptr<_Tp>[m[K’ and ‘[01m[Kdynamixel::PacketHandler*[m[K’
+[1.287s]    47 | xel::PacketHandler::getPacketHandler(configuration_.protocol[01;36m[K)[m[K; //protocol version
+[1.287s]       |                                                             [01;36m[K^[m[K
+[1.287s] 
+[1.287s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:454:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::[01;32m[Koperator=[m[K(std::unique_ptr<_Up, _Ep>&&) [35m[K[with _Del = _Yp; _Tp = dynamixel::PacketHandler][m[K[m[K’
+[1.287s]   454 |         [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+[1.287s]       |         [01;36m[K^~~~~~~~[m[K
+[1.287s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:454:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.287s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:47:95:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’ and ‘[01m[Kdynamixel::PacketHandler*[m[K’
+[1.287s]    47 | xel::PacketHandler::getPacketHandler(configuration_.protocol[01;36m[K)[m[K; //protocol version
+[1.288s]       |                                                             [01;36m[K^[m[K
+[1.288s] 
+[1.288s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:414:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::[01;32m[Koperator=[m[K(const std::shared_ptr<_Tp>&) [35m[K[with _Tp = dynamixel::PacketHandler][m[K[m[K’
+[1.288s]   414 |       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+[1.288s]       |                   [01;36m[K^~~~~~~~[m[K
+[1.288s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:414:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdynamixel::PacketHandler*[m[K’ to ‘[01m[Kconst std::shared_ptr<dynamixel::PacketHandler>&[m[K’
+[1.288s]   414 |       shared_ptr& operator=([01;36m[Kconst shared_ptr&[m[K) noexcept = default;
+[1.288s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[1.288s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:438:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::[01;32m[Koperator=[m[K(std::shared_ptr<_Tp>&&) [35m[K[with _Tp = dynamixel::PacketHandler][m[K[m[K’
+[1.288s]   438 |       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+[1.288s]       |       [01;36m[K^~~~~~~~[m[K
+[1.289s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:438:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdynamixel::PacketHandler*[m[K’ to ‘[01m[Kstd::shared_ptr<dynamixel::PacketHandler>&&[m[K’
+[1.289s]   438 |       operator=([01;36m[Kshared_ptr&& __r[m[K) noexcept
+[1.289s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[1.289s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:48:145:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kdynamixel::GroupSyncWrite::GroupSyncWrite(std::shared_ptr<dynamixel::PortHandler>&, std::shared_ptr<dynamixel::PacketHandler>&, uint16_t&, uint16_t&)[m[K’
+[1.289s]    48 | acketHandler_, impl_->goal_position_address, impl_->data_length_4byte[01;31m[K)[m[K;
+[1.289s]       |                                                                      [01;31m[K^[m[K
+[1.289s] 
+[1.289s] In file included from [01m[K/usr/local/include/dynamixel_sdk/dynamixel_sdk.h:29[m[K:
+[1.289s] [01m[K/usr/local/include/dynamixel_sdk/group_sync_write.h:52:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kdynamixel::GroupSyncWrite::[01;32m[KGroupSyncWrite[m[K(dynamixel::PortHandler*, dynamixel::PacketHandler*, uint16_t, uint16_t)[m[K’
+[1.289s]    52 |   [01;36m[KGroupSyncWrite[m[K(PortHandler *port, PacketHandler *ph, uint16_t start_address, uint16_t data_length);
+[1.290s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[1.290s] [01m[K/usr/local/include/dynamixel_sdk/group_sync_write.h:52:31:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<dynamixel::PortHandler>[m[K’ to ‘[01m[Kdynamixel::PortHandler*[m[K’
+[1.290s]    52 |   GroupSyncWrite([01;36m[KPortHandler *port[m[K, PacketHandler *ph, uint16_t start_address, uint16_t data_length);
+[1.290s]       |                  [01;36m[K~~~~~~~~~~~~~^~~~[m[K
+[1.290s] [01m[K/usr/local/include/dynamixel_sdk/group_sync_write.h:36:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kdynamixel::GroupSyncWrite::[01;32m[KGroupSyncWrite[m[K(const dynamixel::GroupSyncWrite&)[m[K’
+[1.290s]    36 | class WINDECLSPEC [01;36m[KGroupSyncWrite[m[K : public GroupHandler
+[1.290s]       |                   [01;36m[K^~~~~~~~~~~~~~[m[K
+[1.290s] [01m[K/usr/local/include/dynamixel_sdk/group_sync_write.h:36:19:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[1.290s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:49:146:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kdynamixel::GroupSyncRead::GroupSyncRead(std::shared_ptr<dynamixel::PortHandler>&, std::shared_ptr<dynamixel::PacketHandler>&, uint16_t&, uint16_t&)[m[K’
+[1.290s]    49 | etHandler_, impl_->present_position_address, impl_->data_length_4byte[01;31m[K)[m[K;
+[1.290s]       |                                                                      [01;31m[K^[m[K
+[1.290s] 
+[1.291s] In file included from [01m[K/usr/local/include/dynamixel_sdk/dynamixel_sdk.h:28[m[K:
+[1.291s] [01m[K/usr/local/include/dynamixel_sdk/group_sync_read.h:56:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kdynamixel::GroupSyncRead::[01;32m[KGroupSyncRead[m[K(dynamixel::PortHandler*, dynamixel::PacketHandler*, uint16_t, uint16_t)[m[K’
+[1.291s]    56 |   [01;36m[KGroupSyncRead[m[K(PortHandler *port, PacketHandler *ph, uint16_t start_address, uint16_t data_length);
+[1.291s]       |   [01;36m[K^~~~~~~~~~~~~[m[K
+[1.291s] [01m[K/usr/local/include/dynamixel_sdk/group_sync_read.h:56:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<dynamixel::PortHandler>[m[K’ to ‘[01m[Kdynamixel::PortHandler*[m[K’
+[1.291s]    56 |   GroupSyncRead([01;36m[KPortHandler *port[m[K, PacketHandler *ph, uint16_t start_address, uint16_t data_length);
+[1.291s]       |                 [01;36m[K~~~~~~~~~~~~~^~~~[m[K
+[1.291s] [01m[K/usr/local/include/dynamixel_sdk/group_sync_read.h:36:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kdynamixel::GroupSyncRead::[01;32m[KGroupSyncRead[m[K(const dynamixel::GroupSyncRead&)[m[K’
+[1.291s]    36 | class WINDECLSPEC [01;36m[KGroupSyncRead[m[K : public GroupHandler
+[1.291s]       |                   [01;36m[K^~~~~~~~~~~~~[m[K
+[1.291s] [01m[K/usr/local/include/dynamixel_sdk/group_sync_read.h:36:19:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[1.292s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:[m[K In member function ‘[01m[Kvirtual void sas::RobotDriverPX100::[01;32m[Kconnect[m[K()[m[K’:
+[1.292s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:110:16:[m[K [01;31m[Kerror: [m[Kreturn-statement with a value, in function returning ‘[01m[Kvoid[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.292s]   110 |         return [01;31m[K0[m[K;
+[1.292s]       |                [01;31m[K^[m[K
+[1.292s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:117:16:[m[K [01;31m[Kerror: [m[Kreturn-statement with a value, in function returning ‘[01m[Kvoid[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.292s]   117 |         return [01;31m[K0[m[K;
+[1.292s]       |                [01;31m[K^[m[K
+[1.292s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:[m[K In member function ‘[01m[Kvirtual void sas::RobotDriverPX100::[01;32m[Kinitialize[m[K()[m[K’:
+[1.292s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:139:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass sas::RobotDriverPX100::Impl[m[K’ has no member named ‘[01m[Kconfiguration_[m[K’
+[1.292s]   139 |     for(auto id: impl_->[01;31m[Kconfiguration_[m[K.ids){
+[1.292s]       |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.292s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:150:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass sas::RobotDriverPX100::Impl[m[K’ has no member named ‘[01m[Kconfiguration_[m[K’
+[1.293s]   150 |     for(auto id: impl_->[01;31m[Kconfiguration_[m[K.ids){
+[1.293s]       |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.293s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:151:38:[m[K [01;31m[Kerror: [m[K‘[01m[KgroupSyncRead[m[K’ was not declared in this scope
+[1.293s]   151 |         impl_->dxl_addparam_result = [01;31m[KgroupSyncRead[m[K.addParam(id);
+[1.293s]       |                                      [01;31m[K^~~~~~~~~~~~~[m[K
+[1.293s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:153:37:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K([m[K’ token
+[1.293s]   153 |             throw std::runtime_error[01;31m[K([m[K["ID:" + std::to_string(static_cast<int>(id)) +"]groupSyncRead addparam failed"]);
+[1.293s]       |                                     [01;31m[K^[m[K
+[1.293s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:153:39:[m[K [01;31m[Kerror: [m[Kexpected identifier before string constant
+[1.294s]   153 |             throw std::runtime_error([[01;31m[K"ID:"[m[K + std::to_string(static_cast<int>(id)) +"]groupSyncRead addparam failed"]);
+[1.294s]       |                                       [01;31m[K^~~~~[m[K
+[1.294s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:[m[K In lambda function:
+[1.294s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:153:118:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K)[m[K’ token
+[1.294s]   153 | d::to_string(static_cast<int>(id)) +"]groupSyncRead addparam failed"][01;31m[K)[m[K;
+[1.294s]       |                                                                      [01;31m[K^[m[K
+[1.294s] 
+[1.432s] gmake[2]: *** [CMakeFiles/sas_robot_driver_px100.dir/build.make:76: CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_PX100.cpp.o] Error 1
+[1.432s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/sas_robot_driver_px100.dir/all] Error 2
+[1.432s] gmake: *** [Makefile:146: all] Error 2
+[1.434s] Invoked command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100 -- -j8 -l8

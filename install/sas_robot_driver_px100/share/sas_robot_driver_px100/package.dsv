@@ -1,0 +1,11 @@
+source;share/sas_robot_driver_px100/hook/cmake_prefix_path.ps1
+source;share/sas_robot_driver_px100/hook/cmake_prefix_path.dsv
+source;share/sas_robot_driver_px100/hook/cmake_prefix_path.sh
+source;share/sas_robot_driver_px100/hook/ld_library_path_lib.ps1
+source;share/sas_robot_driver_px100/hook/ld_library_path_lib.dsv
+source;share/sas_robot_driver_px100/hook/ld_library_path_lib.sh
+source;share/sas_robot_driver_px100/local_setup.bash
+source;share/sas_robot_driver_px100/local_setup.dsv
+source;share/sas_robot_driver_px100/local_setup.ps1
+source;share/sas_robot_driver_px100/local_setup.sh
+source;share/sas_robot_driver_px100/local_setup.zsh

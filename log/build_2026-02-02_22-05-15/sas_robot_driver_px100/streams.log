@@ -1,0 +1,10 @@
+[0.011s] Invoking command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100 -- -j8 -l8
+[0.066s] [ 25%] [32mBuilding CXX object CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_PX100.cpp.o[0m
+[1.298s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:[m[K In member function ‘[01m[Kvirtual void sas::RobotDriverPX100::[01;32m[Kinitialize[m[K()[m[K’:
+[1.298s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:149:38:[m[K [01;31m[Kerror: [m[K‘[01m[KgroupSyncRead[m[K’ was not declared in this scope
+[1.298s]   149 |         impl_->dxl_addparam_result = [01;31m[KgroupSyncRead[m[K.addParam(id);
+[1.298s]       |                                      [01;31m[K^~~~~~~~~~~~~[m[K
+[1.447s] gmake[2]: *** [CMakeFiles/sas_robot_driver_px100.dir/build.make:76: CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_PX100.cpp.o] Error 1
+[1.447s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/sas_robot_driver_px100.dir/all] Error 2
+[1.448s] gmake: *** [Makefile:146: all] Error 2
+[1.450s] Invoked command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100 -- -j8 -l8

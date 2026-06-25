@@ -1,0 +1,43 @@
+[0.010s] Invoking command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100 -- -j8 -l8
+[0.034s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.267s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.298s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.309s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.322s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.336s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.404s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.405s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.489s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.570s] -- Found sas_core: 25.12.16161141 (/opt/ros/jazzy/share/sas_core/cmake)
+[0.571s] -- Found sas_common: 25.12.16161141 (/opt/ros/jazzy/share/sas_common/cmake)
+[0.573s] -- Found sas_robot_driver: 25.12.16161141 (/opt/ros/jazzy/share/sas_robot_driver/cmake)
+[0.670s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.884s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.885s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/include>
+[0.885s] -- Configured cppcheck exclude dirs and/or files: 
+[0.899s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.899s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.928s] -- Added test 'lint_cmake' to check CMake code style
+[0.943s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.055s] -- Added test 'uncrustify' to check C / C++ code style
+[1.055s] -- Configured uncrustify additional arguments: 
+[1.069s] -- Added test 'xmllint' to check XML markup files
+[1.071s] -- Configuring done (1.0s)
+[1.088s] -- Generating done (0.0s)
+[1.094s] -- Build files have been written to: /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100
+[1.136s] [ 25%] [32mBuilding CXX object CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_PX100.cpp.o[0m
+[2.666s] [ 50%] [32m[1mLinking CXX shared library libsas_robot_driver_px100.so[0m
+[2.815s] [ 50%] Built target sas_robot_driver_px100
+[2.848s] [ 75%] [32m[1mLinking CXX executable sas_robot_driver_PX100_node[0m
+[2.991s] /usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::GroupSyncRead::addParam(unsigned char)'
+[2.992s] /usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::GroupSyncWrite::clearParam()'
+[2.992s] /usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::PacketHandler::getPacketHandler(float)'
+[2.992s] /usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::GroupSyncRead::clearParam()'
+[2.993s] /usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::GroupSyncRead::GroupSyncRead(dynamixel::PortHandler*, dynamixel::PacketHandler*, unsigned short, unsigned short)'
+[2.993s] /usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::GroupSyncWrite::GroupSyncWrite(dynamixel::PortHandler*, dynamixel::PacketHandler*, unsigned short, unsigned short)'
+[2.993s] /usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::PortHandler::getPortHandler(char const*)'
+[2.998s] collect2: error: ld returned 1 exit status
+[2.999s] gmake[2]: *** [CMakeFiles/sas_robot_driver_PX100_node.dir/build.make:199: sas_robot_driver_PX100_node] Error 1
+[3.000s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/sas_robot_driver_PX100_node.dir/all] Error 2
+[3.000s] gmake: *** [Makefile:146: all] Error 2
+[3.002s] Invoked command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100 -- -j8 -l8

@@ -1,0 +1,53 @@
+[0.010s] Invoking command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100 -DCMAKE_INSTALL_PREFIX=/home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100
+[0.098s] -- The C compiler identification is GNU 13.3.0
+[0.180s] -- The CXX compiler identification is GNU 13.3.0
+[0.197s] -- Detecting C compiler ABI info
+[0.285s] -- Detecting C compiler ABI info - done
+[0.296s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.296s] -- Detecting C compile features
+[0.297s] -- Detecting C compile features - done
+[0.308s] -- Detecting CXX compiler ABI info
+[0.406s] -- Detecting CXX compiler ABI info - done
+[0.419s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.419s] -- Detecting CXX compile features
+[0.420s] -- Detecting CXX compile features - done
+[0.425s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.577s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.697s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.751s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.767s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.787s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.810s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.906s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.910s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.989s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.011s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.037s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.134s] -- Found sas_core: 25.12.16161141 (/opt/ros/jazzy/share/sas_core/cmake)
+[1.137s] -- Found sas_common: 25.12.16161141 (/opt/ros/jazzy/share/sas_common/cmake)
+[1.141s] -- Found sas_robot_driver: 25.12.16161141 (/opt/ros/jazzy/share/sas_robot_driver/cmake)
+[1.263s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.516s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.516s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/include>
+[1.516s] -- Configured cppcheck exclude dirs and/or files: 
+[1.532s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.532s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.562s] -- Added test 'lint_cmake' to check CMake code style
+[1.578s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.706s] -- Added test 'uncrustify' to check C / C++ code style
+[1.706s] -- Configured uncrustify additional arguments: 
+[1.721s] -- Added test 'xmllint' to check XML markup files
+[1.724s] -- Configuring done (1.7s)
+[1.741s] -- Generating done (0.0s)
+[1.748s] -- Build files have been written to: /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100
+[1.758s] Invoked command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100 -DCMAKE_INSTALL_PREFIX=/home/robot/Documents/sas_robot_driver_px100/install/sas_robot_driver_px100
+[1.760s] Invoking command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100 -- -j8 -l8
+[1.807s] [ 25%] [32mBuilding CXX object CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_px100.cpp.o[0m
+[1.817s] [01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_px100.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Ksas_robot_driver_PX100/sas_robot_driver_PX100.hpp: No such file or directory
+[1.818s]     1 | #include [01;31m[K"sas_robot_driver_PX100/sas_robot_driver_PX100.hpp"[m[K
+[1.818s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.818s] compilation terminated.
+[1.818s] gmake[2]: *** [CMakeFiles/sas_robot_driver_px100.dir/build.make:76: CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_px100.cpp.o] Error 1
+[1.818s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/sas_robot_driver_px100.dir/all] Error 2
+[1.819s] gmake: *** [Makefile:146: all] Error 2
+[1.821s] Invoked command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100 -- -j8 -l8

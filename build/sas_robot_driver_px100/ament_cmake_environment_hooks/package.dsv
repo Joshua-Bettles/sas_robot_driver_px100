@@ -1,0 +1,4 @@
+source;share/sas_robot_driver_px100/local_setup.bash
+source;share/sas_robot_driver_px100/local_setup.dsv
+source;share/sas_robot_driver_px100/local_setup.sh
+source;share/sas_robot_driver_px100/local_setup.zsh
