@@ -1,0 +1,3 @@
+gmake[2]: *** No rule to make target '/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_px100.cpp', needed by 'CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_px100.cpp.o'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/sas_robot_driver_px100.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

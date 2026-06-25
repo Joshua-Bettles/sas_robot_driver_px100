@@ -1,0 +1,5 @@
+[0.011s] Invoking command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100 -- -j8 -l8
+[0.053s] gmake[2]: *** No rule to make target '/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_px100.cpp', needed by 'CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_px100.cpp.o'.  Stop.
+[0.053s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/sas_robot_driver_px100.dir/all] Error 2
+[0.053s] gmake: *** [Makefile:146: all] Error 2
+[0.055s] Invoked command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100 -- -j8 -l8

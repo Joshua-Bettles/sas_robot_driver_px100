@@ -1,0 +1,8 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_PX100.cpp.o[0m
+[01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:[m[K In member function ‘[01m[Kvirtual void sas::RobotDriverPX100::[01;32m[Kinitialize[m[K()[m[K’:
+[01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:149:38:[m[K [01;31m[Kerror: [m[K‘[01m[KgroupSyncRead[m[K’ was not declared in this scope
+  149 |         impl_->dxl_addparam_result = [01;31m[KgroupSyncRead[m[K.addParam(id);
+      |                                      [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/sas_robot_driver_px100.dir/build.make:76: CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_PX100.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/sas_robot_driver_px100.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,16 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_PX100.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library libsas_robot_driver_px100.so[0m
+[ 50%] Built target sas_robot_driver_px100
+[ 75%] [32mBuilding CXX object CMakeFiles/sas_robot_driver_PX100_node.dir/src/sas_robot_driver_PX100_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable sas_robot_driver_PX100_node[0m
+/usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::GroupSyncRead::addParam(unsigned char)'
+/usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::GroupSyncWrite::clearParam()'
+/usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::PacketHandler::getPacketHandler(float)'
+/usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::GroupSyncRead::clearParam()'
+/usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::GroupSyncRead::GroupSyncRead(dynamixel::PortHandler*, dynamixel::PacketHandler*, unsigned short, unsigned short)'
+/usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::GroupSyncWrite::GroupSyncWrite(dynamixel::PortHandler*, dynamixel::PacketHandler*, unsigned short, unsigned short)'
+/usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::PortHandler::getPortHandler(char const*)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/sas_robot_driver_PX100_node.dir/build.make:199: sas_robot_driver_PX100_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/sas_robot_driver_PX100_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

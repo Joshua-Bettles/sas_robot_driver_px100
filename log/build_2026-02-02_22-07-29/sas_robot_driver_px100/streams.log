@@ -1,0 +1,18 @@
+[0.011s] Invoking command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100 -- -j8 -l8
+[0.065s] [ 25%] [32mBuilding CXX object CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_PX100.cpp.o[0m
+[1.661s] [ 50%] [32m[1mLinking CXX shared library libsas_robot_driver_px100.so[0m
+[1.840s] [ 50%] Built target sas_robot_driver_px100
+[1.859s] [ 75%] [32mBuilding CXX object CMakeFiles/sas_robot_driver_PX100_node.dir/src/sas_robot_driver_PX100_node.cpp.o[0m
+[6.596s] [100%] [32m[1mLinking CXX executable sas_robot_driver_PX100_node[0m
+[6.745s] /usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::GroupSyncRead::addParam(unsigned char)'
+[6.747s] /usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::GroupSyncWrite::clearParam()'
+[6.747s] /usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::PacketHandler::getPacketHandler(float)'
+[6.747s] /usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::GroupSyncRead::clearParam()'
+[6.748s] /usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::GroupSyncRead::GroupSyncRead(dynamixel::PortHandler*, dynamixel::PacketHandler*, unsigned short, unsigned short)'
+[6.748s] /usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::GroupSyncWrite::GroupSyncWrite(dynamixel::PortHandler*, dynamixel::PacketHandler*, unsigned short, unsigned short)'
+[6.748s] /usr/bin/ld: libsas_robot_driver_px100.so: undefined reference to `dynamixel::PortHandler::getPortHandler(char const*)'
+[6.755s] collect2: error: ld returned 1 exit status
+[6.757s] gmake[2]: *** [CMakeFiles/sas_robot_driver_PX100_node.dir/build.make:199: sas_robot_driver_PX100_node] Error 1
+[6.757s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/sas_robot_driver_PX100_node.dir/all] Error 2
+[6.758s] gmake: *** [Makefile:146: all] Error 2
+[6.760s] Invoked command in '/home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/robot/Documents/sas_robot_driver_px100/build/sas_robot_driver_px100 -- -j8 -l8

@@ -1,0 +1,20 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_PX100.cpp.o[0m
+[01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:[m[K In member function ‘[01m[Kvirtual Eigen::VectorXd sas::RobotDriverPX100::[01;32m[Kget_joint_positions[m[K()[m[K’:
+[01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:87:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<dynamixel::GroupSyncRead, __gnu_cxx::_S_atomic, false, false>::element_type = class dynamixel::GroupSyncRead[m[K’ {aka ‘[01m[Kclass dynamixel::GroupSyncRead[m[K’} has no member named ‘[01m[KgetTxRxResult[m[K’
+   87 |             throw std::runtime_error(impl_->groupSyncRead_->[01;31m[KgetTxRxResult[m[K(impl_->dxl_comm_result));
+      |                                                             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:89:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kimpl[m[K’ was not declared in this scope; did you mean ‘[01m[KImpl[m[K’?
+   89 |         [01;31m[Kimpl[m[K->dxl_getdata_result = impl_->groupSyncRead_->isAvailable(id, impl_->present_position_address, impl_->data_length_4byte);
+      |         [01;31m[K^~~~[m[K
+      |         [32m[KImpl[m[K
+[01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:97:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::vector<float>[m[K’ has no member named ‘[01m[Kpushback[m[K’; did you mean ‘[01m[Kpush_back[m[K’?
+   97 |         temp_joint_position_.[01;31m[Kpushback[m[K(impl_->groupSyncRead_->getData(id, impl_->present_position_address, impl_->data_length_4byte));
+      |                              [01;31m[K^~~~~~~~[m[K
+      |                              [32m[Kpush_back[m[K
+[01m[K/home/robot/Documents/sas_robot_driver_px100/src/sas_robot_driver_px100/src/sas_robot_driver_PX100.cpp:100:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_positions_[m[K’ was not declared in this scope; did you mean ‘[01m[Kget_joint_positions[m[K’?
+  100 |     [01;31m[Kjoint_positions_[m[K = temp_joint_position_;
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kget_joint_positions[m[K
+gmake[2]: *** [CMakeFiles/sas_robot_driver_px100.dir/build.make:76: CMakeFiles/sas_robot_driver_px100.dir/src/sas_robot_driver_PX100.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/sas_robot_driver_px100.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
